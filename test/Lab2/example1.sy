@@ -1,0 +1,42 @@
+int main() {
+ 
+    // 声明变量
+    int num1, num2, sum = 0, temp;
+
+    num1 = 21;
+    num2 = 5;
+
+    // 判断并交换数值
+    // if (num1 > num2) {
+        // 交换 num1 和 num2
+    //    temp = num1;
+    //    num1 = num2;
+    //    num2 = temp;
+    //
+    //}
+
+    // 使用 for 循环计算 num1 和 num2 之间的所有偶数的和
+    for (int i = num1; i <= num2; i++) {
+        // 检查是否为偶数
+        if (i % 2 == 0 && num1 >= 0 || num2 < 0 && i % 2 == 0)  {
+            sum = sum + i;  // 加法运算
+        }
+    }
+
+    // 使用 while 循环检查结果是否为正数
+    int is_positive = 1;
+    while (sum != 0) {
+        if (sum < 0) {
+            is_positive = 0;
+            break;
+        }
+        sum = 10;  // 除法运算
+    }
+
+    // 输出结果
+    if (is_positive == 1) {
+        printf(sum);
+    }
+
+    return 0;
+}
